@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  backend:
+    build: ./etc/backend
+    volumes:
+      - "./src:/usr/src/app"
+      - "./var/logs/:/var/logs/app"
+    networks:
+        - app_network
+
+networks:
+  app_network:
+    driver: "bridge"
