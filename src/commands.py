@@ -5,7 +5,7 @@ def start_command_handler(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
 
 def help_command_handler(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="This is a test bot")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Я не буду з тобою говорити")
 
 def register_commands(dispatcher):
     print("Registering commands")
